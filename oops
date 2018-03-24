@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Mar 24 16:20:08 2018
+
+@author: Payilagam
+"""
+
+class Course:
+    Company = "Payilagam"
+    
+    def __init__(self,course_name,course_timing):
+        self.course_name = course_name
+        self.course_timing = course_timing
+        
+        
+    def display(self):
+         print("course_name is:",self.course_name)
+         print("course_timing is:",self.course_timing)
+         print(Course.Company)   
+            
+co1 = Course("Python","3hrs")
+co2 = Course("Java","2hrs")
+
+co1.display()
+co2.display()
+            
+    
