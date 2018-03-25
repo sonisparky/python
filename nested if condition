@@ -1,0 +1,19 @@
+age = int(input("enter your age : "))
+if age<=2 :
+    print("you are a baby")
+else :
+    if age<= 12 :
+        print("you are a child")
+    else :
+        if age<=19 :
+            print ("you are a teenage")
+        else :
+            if age<=30 :
+                print("you are a youth")
+            else :
+                if age<=50 :
+                    print("you are a adult")
+                else :
+                     print("yor are a aged person")
+                
+    
