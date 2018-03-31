@@ -1,0 +1,35 @@
+ALGORITHM :
+
+1: input the number of list.
+2: Use for loop to input the element in list.
+3: Calculate the total sum of elements.
+4: Divide the sum by total number of list.
+5: Exit.
+
+CODING :
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Mar 31 20:00:31 2018
+
+@author: Lazxy
+"""
+
+n=int(input("Enter the number of elements to be inserted: ")) #enter the number of elements
+a=[]
+for i in range(0,n):
+    elem=int(input("Enter element: ")) #enter the elements 
+    a.append(elem) 
+avg=sum(a)/n
+print("Average of elements in the list",round(avg,2)) 
+
+EXPLANATION:
+
+1: Enter the number of elements to be inserted in the list
+2: The value of i ranges from 0 and it is incremented when the body of the loop is executed
+3: Now input the elements which is get stored in variable elem
+4: a.append(elem) which is used to append the elements to the list
+5: Now the value of i will be incremented to 2
+6: sum(a) is used to sum the elements
+7: Average is calculated by sum of elements divided by total number of elements
+8: The print statement is used to output the average, round(avg,2) is used to round the decimal point upto 2 
+
