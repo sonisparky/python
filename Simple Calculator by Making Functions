@@ -1,0 +1,43 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Mar 31 13:01:47 2018
+
+@author: Payilagam
+"""
+
+def add(x,y):   #this function used to add two numbers
+    return x+y
+def sub(x,y):   #this function used to sub two numbers
+    return x-y
+def multi(x,y):  #this function used to multiply two numbers
+    return x*y
+def divi(x,y):   #this function used to divied two numbers
+    return x/y
+
+print("Select Operation")
+print("1.addition")
+print("2.Subraction")
+print("3.Multiplication")
+print("4.Division")
+
+choice = input("Enter your Choice (1/2/3/4):") #to take input from the user
+
+num1 = int(input("enter first number :"))
+num2 = int(input("enter second number :"))
+
+
+if choice == '1' :
+    print(num1,'+',num2,'=',add(num1,num2)) 
+    
+elif choice == '2' :
+    print(num1,'-',num2,'=',sub(num1,num2))
+    
+elif choice == '3' :
+    print(num1,'*',num2,'=',multi(num1,num2))
+    
+elif choice == '4' :
+    print(num1,'/',num2,'=',divi(num1,num2))
+else:
+    print("wrong input")
+    
+
