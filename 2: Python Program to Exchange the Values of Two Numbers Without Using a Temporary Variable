@@ -1,0 +1,35 @@
+ALGORITHM:
+
+1.	Take the values of both the elements from the user.
+2.	Store the values in separate variables.
+3.	Add both the variables and store it in the first variable.
+4.	Subtract the second variable from the first and store it in the second variable.
+5.	Then, subtract the first variable from the second variable and store it in the first variable.
+6.	Print the swapped values.
+7.	Exit.
+
+SOURCE CODE:
+
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Mar 31 21:08:43 2018
+
+@author: Lazxy
+"""
+
+a = int(input("Enter the first variable:"))
+b = int(input("Enter the second variable:"))
+
+a = a+b   #the current value of a and b are added
+b = a-b   #the new value of a is used to subtract
+a = a-b   #the new vale of a and b is used 
+
+print("a is:",a,"b is:",b)
+
+EXPLANATION:
+
+1.	First enter the values for both the elements.
+2.	The first element is assigned the sum of the first two elements.
+3.	Second element is assigned the difference between the sum in the first variable and the second variable, which is basically the first element.
+4.	Later the first element is assigned the difference between the sum in the variable and the second variable, which is the second element.
+5.	The swapped values are printed in the output.
