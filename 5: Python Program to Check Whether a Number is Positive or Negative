@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Apr  2 20:45:11 2018
+
+@author: Lazxy
+"""
+
+'''ALGORITHM:
+    
+ 1.	Enter the value of the integer and store in a variable.
+ 2.	Use an if statement to determine whether the number is positive or negative.
+ 3.	Exit.'''
+
+#SOURCE CODE: 
+ 
+n = int(input("Enter the number:"))
+if n>0 :
+    print("The number is positive")
+else:
+    print("The number is negative")
+    
+'''EXPLANATION:
+    
+ 1.	First enter the value and store it in a variable.
+ 2.	Use an if statement to make a decision.
+ 3.	If the value of the number is greater than 0, “Number is positive” is printed.
+ 4.	If the value of the number if lesser than 0, ”Number is negative” is negative.'''
