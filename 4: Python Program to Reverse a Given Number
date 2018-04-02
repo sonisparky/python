@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Apr  2 20:26:51 2018
+
+@author: Lazxy
+"""
+
+'''ALGORITHM:
+
+1.	Enter the value of the integer and store in a variable.
+2.	Using a while loop, get each digit of the number and store the reversed number in another variable.
+3.	Print the reverse of the number.
+4.	Exit.'''
+
+#SOURCe code:
+
+n=int(input("Enter number: "))  #Enter the number to get reversed
+rev=0
+while(n>0):
+    dig=n%10      #the remainder is taken as dig
+    rev=rev*10+dig
+    n=n//10       #the quotient is taken
+print("Reverse of the number:",rev)
+
+'''EXPLANATION:
+
+1.	User must first enter the value and store it in a variable n.
+2.	The while loop is used and the last digit of the number is obtained by using the modulus operator.
+3.	The last digit is then stored at the one’s place, second last at the ten’s place and so on.
+4.	The last digit is then removed by truly dividing the number with 10.
+5.	This loop terminates when the value of the number is 0.
+6.	The reverse of the number is then printed.'''
