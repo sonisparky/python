@@ -1,0 +1,35 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Apr  2 21:34:07 2018
+
+@author: Lazxy
+"""
+
+'''ALGORITHM:
+    
+1.	Enter the first, second and third number and store it in separate variables.
+2.	Then append all the three numbers to the list.
+3.	Use three for loops and print the digits in the list if none of their indexes are equal to each other.
+4.	Exit.'''
+
+#SOURCE CODE:
+
+a=int(input("Enter first number:"))
+b=int(input("Enter second number:"))
+c=int(input("Enter third number:"))
+d=[]     
+d.append(a)   #uploading the value of a to d
+d.append(b)   #uploading the value of b to d
+d.append(c)   #uploading the value of c to d
+for i in range(0,3):
+    for j in range(0,3):
+        for k in range(0,3):
+            if(i!=j&j!=k&k!=i):
+                print(d[i],d[j],d[k])
+                
+'''EXPLANATION:
+
+1.	User must enter the first, second and third number.
+2.	All the elements are appending into a list for the ease of comparison.
+3.	The for loops range from 0-2 which are basically the indexes of the three elements in the list.
+4.	If none of the indexes are equal to each other, the element associated with the particular element in the list is printed.'''
