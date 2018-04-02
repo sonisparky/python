@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Apr  2 21:24:31 2018
+
+@author: Lazxy
+"""
+
+'''ALGORITHM:
+    
+1.	Enter the first and second number and store it in separate variables.
+2.	Then obtain the quotient using division and the remainder using modulus operator.
+3.	Exit.'''
+
+#SOURCE CODE:
+
+a=int(input("Enter the first number: "))
+b=int(input("Enter the second number: "))
+quotient=a//b     #Dividing the two numbers to get the quotient
+remainder=a%b     #dividing to get the remainder
+print("Quotient is:",quotient)
+print("Remainder is:",remainder)
+
+'''EXPLANATION:
+
+1.	User must enter the first and second number .
+2.	The quotient is obtained using true division (// operator).
+3.	The modulus operator gives the remainder when a is divided by b.'''
