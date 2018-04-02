@@ -1,0 +1,42 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Apr  2 20:54:52 2018
+
+@author: Lazxy
+"""
+
+'''ALGORITHM:
+    
+1.	Take in the marks of 5 subjects from the user and store it in different variables.
+2.	Find the average of the marks.
+3.	Use an else condition to decide the grade based on the average of the marks.
+4.	Exit.'''
+
+#SOURCE CODE:
+
+sub1=int(input("Enter marks of the first subject: "))
+sub2=int(input("Enter marks of the second subject: "))
+sub3=int(input("Enter marks of the third subject: "))
+sub4=int(input("Enter marks of the fourth subject: "))
+sub5=int(input("Enter marks of the fifth subject: "))
+avg=(sub1+sub2+sub3+sub4+sub4)/5       #the avg of 5 subject is calculated
+if(avg>=90):
+    print("Grade: A")
+elif(avg>=80&avg<90):
+    print("Grade: B")
+elif(avg>=70&avg<80):
+    print("Grade: C")
+elif(avg>=60&avg<70):
+    print("Grade: D")
+else:
+    print("Grade: F")
+    
+'''EXPLANATION:
+    
+1.	Enter 5 different values and store it in separate variables.
+2.	Then sum up all the five marks and divide by 5 to find the average of the marks.
+3.	If the average is greater than 90, “Grade: A” is printed.
+4.	If the average is in between 80 and 90, “Grade: B” is printed.
+5.	If the average is in between 70 and 80, “Grade: C” is printed.
+6.	If the average is in between 60 and 70, “Grade: D” is printed.
+7.	If the average is anything below 60, “Grade: F” is printed.'''
