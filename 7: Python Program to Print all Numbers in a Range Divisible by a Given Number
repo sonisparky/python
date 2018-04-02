@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Apr  2 21:17:48 2018
+
+@author: Lazxy
+"""
+
+'''ALGORITHM:
+1.	Take in the upper range and lower range limit from the user.
+2.	Take in the number to be divided by from the user.
+3.	Using a for loop, print all the factors which is divisible by the number.
+4.	Exit.'''
+
+#SOURCE CODE:
+
+lower=int(input("Enter lower range limit:"))
+upper=int(input("Enter upper range limit:"))
+n=int(input("Enter the number to be divided by:"))
+for i in range(lower,upper+1):
+    if(i%n==0):
+        print(i)
+        
+'''EXPLANATION:
+1.	Enter the upper range limit and the lower range limit.
+2.	Then Enter the number to be divided from the user.
+3.	The value of i ranges from the lower limit to the upper limit.
+4.	Whenever the remainder of the number divided by i is equal to 0, i is printed.'''
