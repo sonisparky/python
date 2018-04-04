@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Apr  4 20:30:58 2018
+
+@author: Lazxy
+"""
+
+'''ALGORITHM:
+    
+1.	Take the value of the integer and store in a variable.
+2.	Using a while loop, get each digit of the number and increment the count each time a digit is obtained.
+3.	Print the number of digits in the given integer.
+4.	Exit.'''
+
+#SOURCE CODE:
+
+n=int(input("Enter number:"))
+count=0
+while(n>0):
+    count=count+1
+    n=n//10
+print("The number of digits in the number are:",count)
+
+'''EXPLANATION:
+    
+1.  Enter the value of the integer and store it in a variable.
+2.	The while loop is used and the last digit of the number is obtained by using the modulus operator.
+3.	Each time a digit is obtained, the count value is incremented.
+4.	This loop terminates when the value of the number is 0.
+5.	The total count of the number of digits is printed.'''
