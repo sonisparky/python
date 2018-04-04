@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Apr  4 20:23:17 2018
+
+@author: Lazxy
+"""
+
+'''ALGORITHM:
+    
+1.	Take in an integer from the user.
+2.	Use a for loop where the value of i ranges from 2 to the integer.
+3.	If the number is divisible by i, the value of i is appended to the list.
+4.	The list is then sorted and the smallest element is printed.
+5.	Exit.'''
+
+#SOURCE CODE:
+
+n=int(input("Enter an integer:"))
+a=[]
+for i in range(2,n+1):   #the i ranges from 2 to n+1
+    if(n%i==0):
+        a.append(i)    #the smallest divisor will be inserted to a
+a.sort()
+print("Smallest divisor is:",a[0])
+
+'''EXPLANATION:
+    
+1.	Enter an integer
+2.	The for loop ranges from 2 to the number
+3.	If the remainder of the number divided by the value of i is 0 that means that the element is a divisor of the number
+4.	The divisor of the number is then appended to the list
+5.	The list is then sorted and the smallest element which is the element with index 0 is printed'''
