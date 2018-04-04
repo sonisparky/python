@@ -1,0 +1,42 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Apr  4 20:34:26 2018
+
+@author: Lazxy
+"""
+
+'''ALGORITHM:
+    
+1.	Take the value of the integer and store in a variable.
+2.	Transfer the value of the integer into another temporary variable.
+3.	Using a while loop, get each digit of the number and store the reversed number in another variable.
+4.	Check if the reverse of the number is equal to the one in the temporary variable.
+5.	Print the final result.
+6.	Exit.'''
+
+#SOURCE CODE:
+
+n=int(input("Enter number:"))
+temp=n
+rev=0
+while(n>0):
+    dig=n%10
+    rev=rev*10+dig
+    n=n//10
+if(temp==rev):
+    print("The number is a palindrome!")
+else:
+    print("The number isn't a palindrome!")
+    
+'''EXPLANATION:
+    
+1.	Enter the value of the integer and store it in a variable.
+2.	The value of the integer is then stored in another temporary variable.
+3.	The while loop is used and the last digit of the number is obtained by using the modulus operator.
+4.	The last digit is then stored at the one’s place, second last at the ten’s place and so on.
+5.	The last digit is then removed by truly dividing the number with 10.
+6.	This loop terminates when the value of the number is 0.
+7.	The reverse of the number is then compared with the integer value stored in the temporary variable.
+8.	If both are equal, the number is a palindrome.
+9.	If both aren’t equal, the number isn’t a palindrome.
+10.	The final result is then printed.'''
