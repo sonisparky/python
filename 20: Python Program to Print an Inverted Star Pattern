@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Apr  5 18:54:30 2018
+
+@author: Lazxy
+"""
+
+'''ALGORITHM:
+    
+1.	Take a value from the user and store it in a variable n.
+2.	Use a for loop where the value of i ranges between the values of n-1 and 0 with a decrement of 1 with each iteration.
+3.	Multiply empty spaces with n-i and ‘*’ with i and print both of them.
+4.	Exit.'''
+
+#SOURCE CODE:
+
+n=int(input("Enter number of rows: "))
+for i in range (n,0,-1):
+    print((n-i) * ' ' + i * '*')
+    
+'''EXPLANATION:
+    
+1.	User must first enter the value and store it in a variable n.
+2.	The for loop enables i to range between n-1 and 0 with a decrement of 1 with each iteration.
+3.	For each iteration, ” ” is multiplied with n-i and ‘*’ is multiplied with i to ensure correct spacing of the stars.
+4.	The required pattern is printed.'''
+    
