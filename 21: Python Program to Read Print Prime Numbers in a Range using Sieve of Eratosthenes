@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Apr  5 19:01:07 2018
+
+@author: Lazxy
+"""
+
+'''ALGORITHM:
+    
+1. Take the value of n from the user.
+2. Initialise the sieve with numbers from 2 to n.
+3. Use a while loop with the condition that the sieve is not empty
+4. Get the smallest number that is prime
+5. Remove that number and it’s multiples
+6. Continue till the sieve is empty
+7. Exit'''
+
+#SOURCE CODE:
+
+n=int(input("Enter upper limit of range: "))
+sieve=set(range(2,n+1))
+while sieve:
+    prime=min(sieve)
+    print(prime,end="\t")
+    sieve-=set(range(prime,n+1,prime))
+ 
+print()
+
+'''EXPLANATION:
+    
+1.	User must first enter the value for upper limit of range and store it in a variable n.
+2.	The sieve is initialised to a set which ranges from 2 to n( as n+1 is not included).
+3.	The while loop is used to ensure that the sieve isn’t empty.
+4.	The variable prime is initialised with the least number in the sieve and the prime number is printed.
+5.	The sieve is then removed with all multiples of the prime number.
+6.	Steps 4 and 5 continue till value of sieve becomes empty.'''
