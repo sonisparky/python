@@ -1,0 +1,7 @@
+x=input("enter the string: ")
+str1=list(x)
+rev=str1[::-1]
+if str1==rev :
+    print("it is a palindrome",''.join(str1))
+else:
+    print("it is not a palindrome",''.join(str1))    
