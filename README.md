@@ -1,2 +1,3 @@
 # python
-its a high level programming language
+* Already has your IP.
+* Hates semi-colon.
