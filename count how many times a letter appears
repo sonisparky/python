@@ -1,0 +1,5 @@
+word=input("enter the string :")
+mylist=list(word)
+for i in sorted(set(mylist)):  #sorted is used for ascending order and set is used to avoid repetition
+    count=mylist.count(i)
+    print(f"{i} ={count} times" ) #f is for formating
