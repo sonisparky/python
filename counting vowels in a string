@@ -1,0 +1,11 @@
+def vow(string,vowles) :
+    string=string.casefold()    #it lowercases 
+    count={}.fromkeys(vowles,0)
+    for character in string:
+        if character in count:
+            count[character]+=1
+        return count
+ 
+vowels ='aeiou'
+string="ilovetocode"
+print(vow(string,vowels))
