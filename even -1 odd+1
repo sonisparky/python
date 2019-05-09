@@ -1,0 +1,16 @@
+om=[]
+ani=int(input("enter the length: "))
+for i in range(ani):                 #getting multiple inputs from the users
+    dih=int(input())
+    om.append(dih)
+print(om)                             #if its is even -1 else odd +1
+for k in om:
+    if k%2==0:
+        l=k-1
+        print(l)
+    else:
+        l=k+1
+        print(l)
+        
+        
+        
