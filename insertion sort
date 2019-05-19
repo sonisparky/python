@@ -1,0 +1,18 @@
+def insertion(a):
+    for index in range(1,len(a)):
+        value=a[index]
+        i=index-1
+        while i>=0:
+            if value<a[i]:
+                a[i+1] = a[i]
+                a[i] = value                   #insertion sort
+                i=i-1
+            else:
+                break
+            
+            
+a = input('Enter the list of numbers: ').split()
+a = [int(x) for x in a]
+insertion(a)
+print('Sorted list: ', end='')
+print(a)
