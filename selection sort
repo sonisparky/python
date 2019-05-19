@@ -1,0 +1,10 @@
+num=input("enter the numbers ")
+num=num.split()
+num=[int(x) for x in num]
+i=0
+while i<len(num):               
+    small =min(num[i:])
+    index=num.index(small)                  #list.index(element)
+    num[i],num[index]=num[index],num[i]
+    i=i+1
+print(num)
