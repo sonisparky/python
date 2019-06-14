@@ -4,7 +4,7 @@ def vow(string,vowles) :
     for character in string:
         if character in count:
             count[character]+=1
-        return count
+    return count
  
 vowels ='aeiou'
 string="ilovetocode"
