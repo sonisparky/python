@@ -1,0 +1,6 @@
+def is_armstrong(n):
+    pwr=len(str(n))
+    s=sum([int(x)** pwr for x in str(n)])
+    return s==n
+print(is_armstrong(153))
+print(is_armstrong(123))
