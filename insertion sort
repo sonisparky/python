@@ -11,7 +11,7 @@ def insertion(a):
                 break
             
             
-a = input('Enter the list of numbers: ').split()
+a = input('Enter the list of numbers: ').split()           #while entering the input give space to each numbers
 a = [int(x) for x in a]
 insertion(a)
 print('Sorted list: ', end='')
