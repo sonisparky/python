@@ -1,0 +1,7 @@
+min=int(input("enter the min range :"))
+max=int(input("enter the max range :"))
+for i in range(min,max+1):
+    if (i%7==0 and i%5!=0):
+        a=str(i)
+        print(a + ',',end ="")
+print()                          # escapes u from a new line 
