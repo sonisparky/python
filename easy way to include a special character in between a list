@@ -1,0 +1,7 @@
+a=['soni','cat','bunny','money']
+a= sorted(set(a))                #is used to sort out the list in alphabetic order
+print(str(a).replace(',','-'))   
+
+#estimated output:
+
+['bunny'- 'cat'- 'money'- 'soni']
