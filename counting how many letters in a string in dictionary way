@@ -1,0 +1,7 @@
+ip=input("enter the string: ")
+ip=ip.casefold()
+count={}.fromkeys(ip,0)
+for char in ip:
+    if char in count:
+        count[char]+=1                     #this program helps to print the output in dictionary
+print(count)
