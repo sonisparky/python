@@ -1,0 +1,4 @@
+import inflect 
+n= 100           #change yourself for different output                
+e=inflect.engine()
+print(e.number_to_words(n))
