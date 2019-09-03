@@ -1,0 +1,32 @@
+s="123546987 / 254687  = WATER00"   #123292300
+fin=s.find('=')
+data=s[0:fin]
+print(data)
+if "-" in data :
+    lhs=data.find("-")
+    data1=data[0:lhs]
+    data2=data[lhs+1:-1]
+    final= int(data1) - int(data2)
+    result=str(final)
+    print(result[0:-2])
+if "+" in data :
+    lhs=data.find("+")
+    data1=data[0:lhs]
+    data2=data[lhs+1:-1]
+    final= int(data1) + int(data2)
+    result=str(final)
+    print(result[0:-2])
+if "/" in data :
+    lhs=data.find("/")
+    data1=data[0:lhs]
+    data2=data[lhs+1:-1]
+    final= int(data1) / int(data2)
+    result=str(final)
+    print(result[0:-2])
+else:
+    lhs=data.find("*")
+    data1=data[0:lhs]
+    data2=data[lhs+1:-1]
+    final= int(data1) * int(data2)
+    result=str(final)
+    print(result[0:-2])
