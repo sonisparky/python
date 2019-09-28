@@ -1,0 +1,12 @@
+def com(data,i,length):
+    if i==length:
+        print(''.join(data))
+    else:
+        for j in range(i,length):
+            data[i], data[j] =data[j], data[i]
+            com(data,i+1,length)
+            data[i], data[j]=data[j],data[i]
+string="soniya"                                    #soniya is 6 letter word so 6!=720 it prints the combinations of the word 720 times
+length=len(string)
+data=list(string)
+com(data,0,length)
