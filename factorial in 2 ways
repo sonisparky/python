@@ -3,3 +3,13 @@ def fact(n):
         return 1
     else:                                                  #Factorial using recursion
         return n*fact(n-1)
+        
+        
+#another way
+
+num=int(input("enter the number :"))
+fact=1
+while num>1:
+     fact=fact*num                                    #fabinacci without recursion
+     num=num-1
+print(fact)
