@@ -10,8 +10,11 @@ while b<100:
       print(b)
       a,b = b,a+b
 #another method using recursion
-def fact(n):
-    if n==0:
-        return 1
-    else:                                                  #Factorial using recursion
-        return n*fact(n-1)
+def fib(n):
+    if n<=1:
+        return n
+    else:
+        return fib(n-1) + fib(n-2)                        #fibonacci using recurssion
+num=int(input("enter the number :"))
+for i in range(num):
+    print(fib(i))
