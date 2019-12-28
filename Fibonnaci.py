@@ -18,3 +18,31 @@ def fib(n):
 num=int(input("enter the number :"))
 for i in range(num):
     print(fib(i))
+
+
+
+FIBO IN JAVA
+package TODO;
+import java.util.Scanner;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		Integer n = sc.nextInt();
+		int first = 0,sec = 1, temp, i;
+		for(i=0;i<n;i++) {
+			System.out.println(first);
+			temp=first;
+			first=sec;
+			sec=temp+sec;
+			
+			
+		}
+		
+
+	}
+
+}
