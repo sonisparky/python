@@ -1,5 +1,3 @@
 string=str(input("enter the string to reverse :"))
-c=string.split(' ')
-c=c[-1::-1]                                                  #reverse a string by word
-c=' '.join(c)
-print(c)
+string=string[::-1]                                           #reverse a string by word
+print(string)
