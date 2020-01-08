@@ -1,0 +1,5 @@
+x=500.96985321
+x=str(x)
+c=x.find('.')
+print(c)                #Am printing this for my reference geting the index value of "." so that its easy to get other 3
+print(x[0:c+4])
