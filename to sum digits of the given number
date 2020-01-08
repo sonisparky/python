@@ -1,0 +1,16 @@
+def num(n):
+    sum=0
+    while n!=0:
+        sum=sum + int(n % 10         #ORDINARY WAY
+        n=int(n/10)
+    return sum
+n=5234
+print(num(n))
+
+
+
+#USING RECURSION
+
+'''def num(n):
+    return 0 if n==0 else int(n%10)+num(int(n/10))
+print(num(5234))'''
