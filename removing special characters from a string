@@ -1,0 +1,12 @@
+s=['@','#','&','*','%']
+v=input("enter your input :")    
+v=''.join(i for i in v if not i in s)          #removing special char
+print(v)
+
+#2nd method
+
+s=['@','#','&','*','%']
+v=input("enter your input :") 
+for i in s:
+    v=v.replace(i,'')
+print(v)
